@@ -1,17 +1,37 @@
-let numberofflis = prompt('nece kinoya baxmisiz')
+let numberOfFilms = prompt('Neche kinoya baxmisiniz?');
 
 const personalMovieDB = {
-   
-    caunt: numberofflis,
+    count: numberOfFilms,
     movies: {},
     actors: {},
     genres: [],
     privat: false
 }
 
-let filim = prompt('axrinci baxdigniz filim hansidir')
-let ball = prompt('Bu kinonu neçə bal ilə qiymətləndirirsiniz ?')
+for (let i = 0; i < numberOfFilms; i++) {
 
-personalMovieDB.movies[filim]=ball;
+    let answer1 = prompt('Axirinci baxdiginiz film?');
+    let answer2 = prompt('Bu kinonu neche bal ile qiymetlendirisiniz?');
+
+    if (answer1 == '' || answer1 == null || answer2 == '' || answer2 == null || answer1.length > 50) {
+        console.log("Sehv bash verdi");
+        i--;
+    } else {
+        personalMovieDB.movies[answer1] = answer2;
+    }
+}
+
+if (personalMovieDB.count < 10) {
+    console.log('Cox az filme baxmisiniz');
+} else if (personalMovieDB.count < 30) {
+    console.log("Klassik Film izleyicisi");
+} else if (personalMovieDB.count > 30) {
+    console.log('Siz Kinomansiniz');
+} else {
+    console.log("Sehv bas verdi")
+}
+
+
+
 
 console.log(personalMovieDB);
