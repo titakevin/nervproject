@@ -12,6 +12,6 @@ const personalMovieDB = {
 let filim = prompt('axrinci baxdigniz filim hansidir')
 let ball = prompt('Bu kinonu neçə bal ilə qiymətləndirirsiniz ?')
 
-personalMovieDB.movies[filim=ball]
+personalMovieDB.movies[filim]=ball;
 
 console.log(personalMovieDB);
