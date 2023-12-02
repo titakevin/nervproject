@@ -7,10 +7,7 @@ const personalMovieDB = {
     actors: [],
     genres: [],
     privat: false,
-    movies:{
-        'logan': ball
-     }
-
+    movies:{}
 }
 
 let filim = prompt('axrinci baxdigniz filim hansidir')
