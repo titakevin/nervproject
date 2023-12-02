@@ -3,11 +3,10 @@ let numberofflis = prompt('nece kinoya baxmisiz')
 const personalMovieDB = {
    
     caunt: numberofflis,
-    movies: [],
-    actors: [],
+    movies: {},
+    actors: {},
     genres: [],
-    privat: false,
-    movies:{}
+    privat: false
 }
 
 let filim = prompt('axrinci baxdigniz filim hansidir')
