@@ -1,6 +1,5 @@
 let numberofflis = prompt('nece kinoya baxmisiz')
-let filim = prompt('axrinci baxdigniz filim hansidir')
-let ball = prompt('Bu kinonu neçə bal ilə qiymətləndirirsiniz ?')
+
 const personalMovieDB = {
    
     caunt: numberofflis,
@@ -13,5 +12,10 @@ const personalMovieDB = {
      }
 
 }
+
+let filim = prompt('axrinci baxdigniz filim hansidir')
+let ball = prompt('Bu kinonu neçə bal ilə qiymətləndirirsiniz ?')
+
+personalMovieDB.movies[filim=ball]
 
 console.log(personalMovieDB);
